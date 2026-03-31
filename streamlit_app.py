@@ -28,7 +28,7 @@ Ingredients_List = st.multiselect(
 if Ingredients_List:
     ingredients_string=''
 
-    for fruit_choosen in Ingredients_List:
+    for fruit_chosen in Ingredients_List:
         ingredients_string += fruit_choosen +' '
         st.subheader(fruit_chosen + ' Nutrition Information')
         smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/" + fruit_chosen)  
